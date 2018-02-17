@@ -9,8 +9,10 @@ import { OrderService } from 'app/service/order.service';
 export class OrdersComponent implements OnInit {
 
   orderList: any;
+  count: number;
   constructor(private orderService: OrderService) {
     this.orderList = null;
+    this.count = 0;
    }
 
   ngOnInit() {
@@ -19,6 +21,7 @@ export class OrdersComponent implements OnInit {
 
   getorderList() {
     this.orderList = this.orderService.getAllOrders();
+    this.count = this.orderList.length;
     console.log(this.orderList);
   }
 
