@@ -1,8 +1,11 @@
 <div class="card-view" *ngFor='let data of list'>
-    <label>{{data.name}}</label>
-    <label>{{data.price}}</label>
-    <label>{{data.description}}</label>
-    <label>{{data.available}}</label>
-  
-    <button (click)='buttonClicked(data)' class='btn'>CLICK</button>
+    <div class="pizza-image">IMAGE HERE</div>
+    <label class='type'>{{data.type}}</label>
+    <label class='name'>{{data.name}}</label>
+    <label class='description' title='{{data.description}}'>{{data.description}}</label>
+    <label class='size'><span>Size :</span> {{data.size}}</label>
+    <label class='price'>
+      <span>Rs :</span> {{data.price}} /-
+      <button (click)='buttonClicked(data)' class='btn'>ORDER NOW</button>
+    </label>
 </div>

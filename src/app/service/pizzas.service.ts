@@ -4,43 +4,47 @@ import { Injectable } from '@angular/core';
 export class PizzasService {
 
   constructor() { }
-
   getPizzasList() {
     return [
       {
-        id: 'pizza1',
-        name: 'Pizza 1',
-        description: 'Nice pizza',
-        price: '200',
-        available: 'yes'
+        id: '1',
+        type: 'Supreme',
+        name: 'Veggie Supreme',
+        description: 'Onion, Capsicum, Mushroom, Red Peprika, Black Olives, Sweet Corn',
+        size: 'Medium',
+        price: '545'
       },
       {
-        id: 'pizza2',
-        name: 'Pizza 2',
-        description: 'Nice pizza2',
-        price: '202',
-        available: 'no'
+        id: '2',
+        type: 'Supreme',
+        name: 'Exotica',
+        description: 'Red Capsicum, Green Capsicum, Baby Corn, Black Olives, Jalapenos',
+        size: 'Medium',
+        price: '455'
       },
       {
-        id: 'pizza3',
-        name: 'Pizza 3',
-        description: 'Nice pizza3',
-        price: '203',
-        available: 'yes'
+        id: '3',
+        type: 'Supreme',
+        name: 'Paneer Vegorama',
+        description: 'Paneer, Onion, Capsicum, Black Olives, Red Paprika',
+        size: 'Medium',
+        price: '665'
       },
       {
-        id: 'pizza4',
-        name: 'Pizza 4',
-        description: 'Nice pizza 4',
-        price: '204',
-        available: 'yes'
+        id: '4',
+        type: 'Supreme',
+        name: 'Chicken Supreme',
+        description: 'Chicken Tikka, Chicken Hot & Chilly, Chicken Meatball',
+        size: 'Medium',
+        price: '567'
       },
       {
-        id: 'pizza5',
-        name: 'Pizza 5',
-        description: 'Nice pizza 5',
-        price: '205',
-        available: 'yes'
+        id: '5',
+        type: 'Supreme',
+        name: 'Triple Chicken Feast',
+        description: 'Chicken Keema, Chicken Meatball, Chicken Hot & Chilly, Capsicum, Onion, Sweet Corn',
+        size: 'Medium',
+        price: '777'
       }
     ]
   }
