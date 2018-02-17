@@ -1,0 +1,47 @@
+:host {
+	display: block;
+	height: 65px;
+	background-color: #adad85;
+	border-bottom: 1px solid #6b6b47;
+
+    .container {
+    	width: 1140px;
+	    margin: auto;
+        height: 100%;
+        .pizza-icon {
+            font-size: 35px;
+            display: inline;
+            line-height: 67px;
+            cursor: pointer;
+        }
+	    ul {
+		    display: inline-block;
+		    float: right;
+	        }
+
+	    li {
+		    list-style-type: none;
+		    float: left;
+		    padding-left: 40px;
+		    line-height: 30px;
+		    cursor: pointer;
+
+		    a {
+			    text-decoration: none;
+                color: black;
+                font-weight: 600;
+		        }   
+
+		    &.active {
+			    color: blue;
+			    a {
+				    color: blue;
+		        	}
+    		}
+	    }
+
+	    li:last-child {
+		    padding-right: 0;
+    	}
+    }
+}
