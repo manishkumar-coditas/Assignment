@@ -23,7 +23,10 @@ export class HomeComponent implements OnInit {
   }
 
   selectedPizza(e) {
-    console.log(e);
-    this.orderService.saveOrder(e);
+    if(confirm('Are you sure to order this item')) {
+      console.log(e);
+      this.orderService.saveOrder(e);
+      alert('Your order will be delivered in 1 hour'); 
+    };
   }
 }

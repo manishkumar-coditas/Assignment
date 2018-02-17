@@ -26,7 +26,10 @@ export class OrdersComponent implements OnInit {
   }
 
   cancelOrder(i) {
+    if(confirm('Are you sure to cancel this order')) {
     this.orderService.cancelOrder(i);
     this.getorderList();
+    alert('Your order is canceled...');
+    }
   }
 }
