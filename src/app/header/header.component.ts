@@ -11,13 +11,17 @@ export class HeaderComponent implements OnInit {
   isHome:boolean;
   isOffer: boolean;
   isOrder: boolean;
+  message: string;
   constructor(private router: Router) { 
-    if(this.router.url.indexOf('offers')>0) {
+    if(window.location.href.indexOf('offers')>0) {
       this.isOffer = true;
-    } else if(this.router.url.indexOf('orders')>0) {
+      this.message = 'YOUR OFFER(s)';
+    } else if(window.location.href.indexOf('orders')>0) {
       this.isOrder = true;
+      this.message = 'YOUR ORDER(s)';
     } else {
       this.isHome = true;
+      this.message = 'SELECT YOUR ORDER(s)';
     }
   }
 
@@ -32,14 +36,17 @@ export class HeaderComponent implements OnInit {
       case 'HOME':
           this.isHome = true;
           this.router.navigate(['home']);
+          this.message = 'SELECT YOUR ORDER(s)';
       break;
       case 'ORDER':
           this.isOrder = true;
           this.router.navigate(['orders']);
+          this.message = 'YOUR ORDER(s)';
       break;
       case 'OFFER':
           this.isOffer = true;
           this.router.navigate(['offers']);
+          this.message = 'YOUR OFFER(s)';
       break;
     }
   }

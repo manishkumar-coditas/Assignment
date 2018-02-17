@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PizzasService } from 'app/service/pizzas.service';
+import { OrderService } from 'app/service/order.service';
 
 @Component({
   selector: 'app-home',
@@ -9,7 +10,7 @@ import { PizzasService } from 'app/service/pizzas.service';
 export class HomeComponent implements OnInit {
 
   pizzaList: any;
-  constructor(private pizzaService: PizzasService) {
+  constructor(private pizzaService: PizzasService, private orderService:OrderService) {
     this.getList();
    }
 
@@ -23,5 +24,6 @@ export class HomeComponent implements OnInit {
 
   selectedPizza(e) {
     console.log(e);
+    this.orderService.saveOrder(e);
   }
 }

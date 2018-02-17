@@ -48,4 +48,32 @@ export class PizzasService {
       }
     ]
   }
+  getOfferPizzasList() {
+    return [
+      {
+        id: '1',
+        type: 'Supreme',
+        name: 'Veggie Supreme',
+        description: 'Onion, Capsicum, Mushroom, Red Peprika, Black Olives, Sweet Corn',
+        size: 'Medium',
+        price: '245'
+      },
+      {
+        id: '4',
+        type: 'Supreme',
+        name: 'Chicken Supreme',
+        description: 'Chicken Tikka, Chicken Hot & Chilly, Chicken Meatball',
+        size: 'Medium',
+        price: '267'
+      },
+      {
+        id: '5',
+        type: 'Supreme',
+        name: 'Triple Chicken Feast',
+        description: 'Chicken Keema, Chicken Meatball, Chicken Hot & Chilly, Capsicum, Onion, Sweet Corn',
+        size: 'Medium',
+        price: '377'
+      }
+    ]
+  }
 }
