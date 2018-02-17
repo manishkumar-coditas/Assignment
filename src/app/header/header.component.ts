@@ -31,12 +31,15 @@ export class HeaderComponent implements OnInit {
     switch(name) {
       case 'HOME':
           this.isHome = true;
+          this.router.navigate(['home']);
       break;
       case 'ORDER':
           this.isOrder = true;
+          this.router.navigate(['orders']);
       break;
       case 'OFFER':
           this.isOffer = true;
+          this.router.navigate(['offers']);
       break;
     }
   }
