@@ -29,7 +29,7 @@ export class OrdersComponent implements OnInit {
     if(confirm('Are you sure to cancel this order')) {
     this.orderService.cancelOrder(i);
     this.getorderList();
-    alert('Your order is canceled...');
+    alert('Your order is cancelled...');
     }
   }
 }
