@@ -1,1 +1,5 @@
-<app-card-view [list]='pizzaList' (selectedPizza)='selectedPizza($event)'></app-card-view>
+<app-card-view 
+    [list]='pizzaList'
+    [tabName]='getTabName()'
+    (selectedPizza)='selectedPizza($event)'>
+</app-card-view>

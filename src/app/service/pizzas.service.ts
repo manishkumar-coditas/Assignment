@@ -56,6 +56,7 @@ export class PizzasService {
         name: 'Veggie Supreme',
         description: 'Onion, Capsicum, Mushroom, Red Peprika, Black Olives, Sweet Corn',
         size: 'Medium',
+        oldPrice: '554',
         price: '245'
       },
       {
@@ -64,6 +65,7 @@ export class PizzasService {
         name: 'Chicken Supreme',
         description: 'Chicken Tikka, Chicken Hot & Chilly, Chicken Meatball',
         size: 'Medium',
+        oldPrice: '656',
         price: '267'
       },
       {
@@ -72,6 +74,7 @@ export class PizzasService {
         name: 'Triple Chicken Feast',
         description: 'Chicken Keema, Chicken Meatball, Chicken Hot & Chilly, Capsicum, Onion, Sweet Corn',
         size: 'Medium',
+        oldPrice: '543',
         price: '377'
       }
     ]

@@ -8,6 +8,7 @@ import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 export class CardViewComponent implements OnInit {
 
   @Input() list;
+  @Input() tabName;
   @Output() selectedPizza = new EventEmitter();
   constructor() { 
   }

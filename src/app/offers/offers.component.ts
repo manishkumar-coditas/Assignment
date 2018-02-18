@@ -29,4 +29,8 @@ export class OffersComponent implements OnInit {
       alert('Your order will be delivered in 1 hour'); 
     };
   }
+
+  getTabName() {
+    return 'OFFER';
+  }
 }

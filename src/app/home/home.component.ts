@@ -29,4 +29,8 @@ export class HomeComponent implements OnInit {
       alert('Your order will be delivered in 1 hour'); 
     };
   }
+
+  getTabName() {
+    return 'HOME';
+  }
 }

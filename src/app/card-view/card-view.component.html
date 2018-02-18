@@ -4,9 +4,16 @@
     <label class='name'>{{data.name}}</label>
     <label class='description' title='{{data.description}}'>{{data.description}}</label>
     <label class='size'><span>Size :</span> {{data.size}}</label>
-    <label class='price'>
+    <div class='price' *ngIf="tabName==='HOME'">
       <span>Rs :</span> {{data.price}} /-
       <button (click)='buttonClicked(data)' class='btn'>ORDER NOW</button>
-    </label>
+    </div>
+    <div class='price' *ngIf="tabName==='OFFER'">
+      <div class='offer-price'>
+        Rs : {{data.oldPrice}} /-
+      </div>
+      <span>Rs :</span> {{data.price}} /-
+      <button (click)='buttonClicked(data)' class='btn'>ORDER NOW</button>
+    </div>
 </div>
 <div class="clear-float"></div>
