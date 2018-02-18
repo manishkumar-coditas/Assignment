@@ -3,8 +3,8 @@
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.28.3.
 
 ## Dependency tools
-Install 'npm' and 'node' to your PC.
-Clone this project to your pc, then go to the project folder and run 'npm install' to get the node modules.
+Install `npm` and `node` to your PC.
+Clone this project to your pc, then go to the project folder and run `npm install` to get the node modules.
 
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
