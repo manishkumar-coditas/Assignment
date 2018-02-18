@@ -2,8 +2,8 @@
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.28.3.
 
-## Development server
-Install 'npm' and 'node' module to your PC.
+## Dependency tools
+Install 'npm' and 'node' to your PC.
 Clone this project to your pc, then go to the project folder and run 'npm install' to get the node modules.
 
 ## Development server
