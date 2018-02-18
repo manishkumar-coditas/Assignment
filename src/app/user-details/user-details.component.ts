@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-user-details',
@@ -7,9 +7,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserDetailsComponent implements OnInit {
 
-  constructor() { }
+  @Output() orderDetails = new EventEmitter();
+  userDetails: any;
+  constructor() {
+   }
 
   ngOnInit() {
+    this.userDetails = {
+      name: '',
+      email: '',
+      contact: '',
+      address: ''
+    }
   }
 
+  orderPizza(){
+    this.orderDetails.emit(this.userDetails);
+  }
+  
+  cancel(){
+    this.orderDetails.emit(false);
+  }
 }

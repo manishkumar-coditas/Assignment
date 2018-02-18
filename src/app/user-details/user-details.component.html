@@ -1,3 +1,37 @@
-<p>
-  user-details works!
-</p>
+<div class="loader-container">
+  <div class="inner-div">
+    <form (ngSubmit)='orderPizza()'>
+      <div class="title">
+        DELIVERY DETAILS
+      </div>
+        <div class="row">
+            <label>Full Name</label>
+            <input type="text" name='name' [(ngModel)]='userDetails.name' class='input-text'>
+          </div>
+          <div class="row">
+            <label>Email ID</label>
+            <input type="email" name='email' [(ngModel)]='userDetails.email' class='input-text'>
+          </div>
+          <div class="row">
+            <label>Contact No.</label>
+            <input type="text" name='contact' [(ngModel)]='userDetails.contact' class='input-text'>
+          </div>
+          <div class="row">
+            <label>Delivery Address</label>
+            <textarea name="address"  [(ngModel)]='userDetails.address'cols="30" rows="10" value='address'></textarea>
+          </div>
+          <div class="row">
+              <button type="button" class='btn' (click)='cancel()'>
+                CANCEL
+              </button>
+            <button type="reset" class='btn'>
+              RESET
+            </button>
+            <button type="submit" class='btn'>
+              ORDER NOW
+            </button>
+          </div>
+    </form>
+  </div>
+</div>
+  

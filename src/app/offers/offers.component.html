@@ -3,3 +3,8 @@
     [tabName]='getTabName()'
     (selectedPizza)='selectedPizza($event)'>
 </app-card-view>
+
+<app-user-details
+    *ngIf='showUserDetails'
+    (orderDetails)='saveOrderDetails($event)'>
+</app-user-details>

@@ -12,7 +12,8 @@ export class PizzasService {
         name: 'Veggie Supreme',
         description: 'Onion, Capsicum, Mushroom, Red Peprika, Black Olives, Sweet Corn',
         size: 'Medium',
-        price: '545'
+        price: '545',
+        userDetails: {}
       },
       {
         id: '2',
@@ -20,7 +21,8 @@ export class PizzasService {
         name: 'Exotica',
         description: 'Red Capsicum, Green Capsicum, Baby Corn, Black Olives, Jalapenos',
         size: 'Medium',
-        price: '455'
+        price: '455',
+        userDetails: {}
       },
       {
         id: '3',
@@ -28,7 +30,8 @@ export class PizzasService {
         name: 'Paneer Vegorama',
         description: 'Paneer, Onion, Capsicum, Black Olives, Red Paprika',
         size: 'Medium',
-        price: '665'
+        price: '665',
+        userDetails: {}
       },
       {
         id: '4',
@@ -36,7 +39,8 @@ export class PizzasService {
         name: 'Chicken Supreme',
         description: 'Chicken Tikka, Chicken Hot & Chilly, Chicken Meatball',
         size: 'Medium',
-        price: '567'
+        price: '567',
+        userDetails: {}
       },
       {
         id: '5',
@@ -44,7 +48,8 @@ export class PizzasService {
         name: 'Triple Chicken Feast',
         description: 'Chicken Keema, Chicken Meatball, Chicken Hot & Chilly, Capsicum, Onion, Sweet Corn',
         size: 'Medium',
-        price: '777'
+        price: '777',
+        userDetails: {}
       }
     ]
   }
@@ -57,7 +62,8 @@ export class PizzasService {
         description: 'Onion, Capsicum, Mushroom, Red Peprika, Black Olives, Sweet Corn',
         size: 'Medium',
         oldPrice: '554',
-        price: '245'
+        price: '245',
+        userDetails: {}
       },
       {
         id: '4',
@@ -66,7 +72,8 @@ export class PizzasService {
         description: 'Chicken Tikka, Chicken Hot & Chilly, Chicken Meatball',
         size: 'Medium',
         oldPrice: '656',
-        price: '267'
+        price: '267',
+        userDetails: {}
       },
       {
         id: '5',
@@ -75,7 +82,8 @@ export class PizzasService {
         description: 'Chicken Keema, Chicken Meatball, Chicken Hot & Chilly, Capsicum, Onion, Sweet Corn',
         size: 'Medium',
         oldPrice: '543',
-        price: '377'
+        price: '377',
+        userDetails: {}
       }
     ]
   }

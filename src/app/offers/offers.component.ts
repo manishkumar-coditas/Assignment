@@ -10,8 +10,11 @@ import { OrderService } from 'app/service/order.service';
 export class OffersComponent implements OnInit {
 
   pizzaList: any;
+  showUserDetails: boolean;
+  orderDetails: any;
   constructor(private pizzaService: PizzasService, private orderService:OrderService) {
     this.getList();
+    this.showUserDetails = false;
    }
 
   ngOnInit() {
@@ -19,18 +22,26 @@ export class OffersComponent implements OnInit {
 
   getList() {
     this.pizzaList = this.pizzaService.getOfferPizzasList();
-    console.log('list : ', this.pizzaList);
   }
 
   selectedPizza(e) {
-    if(confirm('Are you sure to order this item')) {
-      console.log(e);
-      this.orderService.saveOrder(e);
-      alert('Your order will be delivered in 1 hour'); 
-    };
+    this.orderDetails = e;
+    this.showUserDetails = true;
   }
 
   getTabName() {
     return 'OFFER';
+  }
+  saveOrderDetails(e) {
+    if(e=== false) {
+      this.showUserDetails = false;
+    } else {
+      if(confirm('Are you sure to order this item')) {
+        this.orderDetails.userDetails = e;
+        this.orderService.saveOrder(this.orderDetails);
+        alert('Your order will be delivered in 1 hour'); 
+        this.showUserDetails = false;
+      };
+    }
   }
 }
