@@ -3,7 +3,7 @@
 </div>
 <div class="order" *ngFor='let order of orderList; let i=index;'>
     <div class="header">
-        <div class="user-name">Order to : {{order.userDetails.name}} - {{order.userDetails.contact}}</div>
+        <div class="user-name">Deliver to : {{order.userDetails.name}} - {{order.userDetails.contact}}</div>
         <button (click)='cancelOrder(i)' class='btn'>CANCEL ORDER</button>
         <div class="clear-float"></div>
     </div>

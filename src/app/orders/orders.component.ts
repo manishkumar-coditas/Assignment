@@ -22,7 +22,6 @@ export class OrdersComponent implements OnInit {
   getorderList() {
     this.orderList = this.orderService.getAllOrders();
     this.count = this.orderList.length;
-    console.log(this.orderList);
   }
 
   cancelOrder(i) {
