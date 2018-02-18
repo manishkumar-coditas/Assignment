@@ -12,6 +12,7 @@ import { OffersComponent } from './offers/offers.component';
 import { OrderService } from 'app/service/order.service';
 import { PizzasService } from 'app/service/pizzas.service';
 import { CardViewComponent } from './card-view/card-view.component';
+import { UserDetailsComponent } from './user-details/user-details.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { CardViewComponent } from './card-view/card-view.component';
     HomeComponent,
     OrdersComponent,
     OffersComponent,
-    CardViewComponent
+    CardViewComponent,
+    UserDetailsComponent
   ],
   imports: [
     BrowserModule,
